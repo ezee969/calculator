@@ -5,7 +5,8 @@ var add = function (a,b){
 var substract = function (a,b){
     return a-b 
 };
-
+// 10*2+5+5
+// 10*2*5
 var multiply = function (a,b){
     return a*b
 };
@@ -82,7 +83,9 @@ getEraseBut.onclick = function(){
 
 var getPointBut= document.querySelector("#pointBut")
 getPointBut.onclick = function(){
-    if ((display.innerHTML)[(display.innerHTML).length - 1]!="."){
+    if ((display.innerHTML)[(display.innerHTML).length - 1]!="." && (display.innerHTML).includes(".")==false){
         withPoint = true
     };
 };
+
+var getMultiplyBut=document.querySelector("#multiplyBut")
