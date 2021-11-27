@@ -1,0 +1,76 @@
+html{   
+    background-color: rgb(235, 126, 107);
+}
+
+html, body, #calcContainer, #calcContainer > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing:border-box;
+}
+
+#calcContainer{
+    height: 55%;
+    width: 19%;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+    justify-content: flex-start;
+    background-color: #393939;
+}
+
+#headerContainer{
+    border-radius: 10px;
+    height: 20%;
+    width: 100%;
+    background-color: #a4af77;
+    font-family: 'Nova Flat';font-size: 33px;
+    font-weight:normal;
+    justify-content:end;
+    padding: 15px;
+}
+
+#bodyContainer{
+    height: 80%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-bottom: 14.5px;
+    padding-top: 14.5px;
+}
+
+button{
+    background-color: #656568;
+    color: white;
+    font-weight: bolder;
+    height: 16%;
+    width: 22.75%;
+    border-radius: 7.5px;
+    border: none;
+    font-family: 'Arial Black';font-size: 22px;
+    transition: 0.1s;
+}
+
+button:hover{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    transform: translateY(-1.5px);
+}
+
+button:active, button.active{
+    transform: translateY(1.5px);
+    box-shadow: none;
+}
+
+.topBut{
+    width: 48%;
+    height: 18%;
+    background-color: black;
+    font-size: 16px
+}
+
+#equal{
+    background-color: crimson;
+}
